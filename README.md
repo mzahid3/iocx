@@ -1,6 +1,6 @@
 # iocx
 
-![tests](https://github.com/<your-username>/iocx/actions/workflows/tests.yml/badge.svg)
+![tests](https://github.com/mzahid3/iocx/actions/workflows/tests.yml/badge.svg)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
@@ -22,7 +22,7 @@ Built from day-to-day MSSP triage work, where IOCs arrive defanged, duplicated, 
 ## Install
 
 ```bash
-git clone https://github.com/<your-username>/iocx.git
+git clone https://github.com/mzahid3/iocx.git
 cd iocx
 pip install -r requirements.txt
 ```
