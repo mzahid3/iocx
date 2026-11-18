@@ -1,0 +1,13 @@
+Threat Bulletin: Phishing campaign delivering loader malware
+
+Initial access was via phishing emails from billing@invoice-update[.]com with a link to
+hxxps://secure-docs[.]invoice-update[.]com/view?id=8842 that downloaded Invoice_2291.zip.
+The archive contained update.exe (SHA256: 780c881505aacb5f6b822ea0051d9059674ead2fc8a2a177b6a641caf501135b)
+and a dropper with MD5 5d41402abc4b2a76b9719d911017c592.
+
+C2 traffic was observed to 185.220.101[.]45 and 45.142.212.61 over TCP 443, with
+fallback to cdn-sync(.)net. Internal host 10.20.30.40 beaconed every 60 seconds.
+
+The actor exploited CVE-2024-3400 for edge access and used PowerShell (T1059.001)
+and scheduled tasks (T1053.005) for persistence. Reference SHA1:
+aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
